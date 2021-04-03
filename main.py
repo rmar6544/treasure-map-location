@@ -10,28 +10,11 @@ position = input("Where do you want to put the treasure? ")
 #Write your code below this row 👇
 #coordinates for treasure map
 #buried treasure "X" marks the spot
-if position == "11":
-  row1[0] = "X"
-elif position == "12":
-  row2[0] = "X"
-elif position == "13":
-  row3[0] = "X"
-elif position == "21":
-  row1[1] = "X"
-elif position == "22":
-  row2[1] = "X"
-elif position == "23":
-  row3[1] = "X"
-elif position == "31":
-  row1[2] = "X"
-elif position == "32":
-  row2[2] = "X"
+marks = int(position[0])   
+rows = int(position[1])
 
-elif position == "33":
-  row3[2]= "X"         
-
-
-
+selected = map[rows-1]
+selected[marks-1] = "X"
 
 
 #Write your code above this row 👆
